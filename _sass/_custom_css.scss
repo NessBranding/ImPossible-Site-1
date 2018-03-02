@@ -1,0 +1,808 @@
+
+
+//READ 'STYLE GUIDE' under _sass>bootstrap for details on how the bootstrap Navbar was styled
+
+//Look for notes throughout this stylesheet.  Styles are organized by the pages & sections they corrispond to on the site
+
+
+//Global styles
+
+.row{
+    //needed for AOS scroll library
+    overflow: hidden;
+}
+
+a{
+    color: #ff0000;
+        
+    &:hover{
+            color: rgba(255,0,0,.7);
+            text-decoration: none;
+        }
+    &:focus{
+        color: #ff0000;
+    }
+} 
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+ 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+
+.home-background{    
+
+    background: url('../img/BackgroundImg/Home-background.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size:cover;
+    -o-background-size: cover; 
+           
+}
+
+footer{
+    
+ 
+    background: #000000;
+    border-top: 1px #ffffff solid;
+    
+    
+    .footer{
+        p,
+        a{
+            color: #ffffff;
+        }
+        
+        .fa-calendar-alt,
+        .fa-facebook-square,
+        .fa-instagram,
+        .fa-map-marker-alt,
+        .fa-envelope,
+        .fa-phone-square{
+            color: #ffffff;
+        }
+    }
+    
+  
+    
+}
+
+
+
+.head{
+
+    background-color: rgba(60,0,0,.50);
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    @media screen and(min-width:576px){
+        padding-top: 200px;
+        padding-bottom: 150px;
+    }
+    @media screen and(min-width:768px){
+            padding-bottom: 200px;
+        }
+    @media screen and(min-width:992px){
+            padding-bottom: 280px;
+    }
+
+    h1{
+
+        font-size: 40px;
+        font-weight: 700;
+        color: #ffffff;
+
+        @media screen and (min-width: 768px){
+            font-size: 70px;
+        }
+    }
+        p{
+            text-transform: uppercase;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 400;
+            letter-spacing: 3px;
+            color: #ffffff;
+             @media screen and(min-width:768px){
+
+                font-size:24px;
+            }
+        }
+
+    }
+
+.carousel{
+    margin-bottom: -1px;
+    
+    .logo-overlay{
+        
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    position:absolute;
+      z-index:100;
+      top:0;
+        bottom:0;
+        right:0;
+      left:0;
+      width: 100%;
+        height: 100%;
+        margin: auto;
+        
+        img{ 
+            width: 20%;
+        }
+        
+        p{
+            color: #ffffff;
+            font-size: 24px;
+        }
+    }
+    
+    .carousel-item{
+        img{
+           width: 100%; 
+        }
+    }
+    
+    .carousel-indicators,
+    .carousel-control-prev,
+    .carousel-control-next{
+        z-index: 200;
+    }
+    
+}
+
+//HOME PAGE STYLING
+
+.home-page{
+
+    .head-logo-section{
+        
+        background-color: rgba(60,0,0,.50); 
+  
+        img{
+            width: 50%;
+            opacity: 0;
+
+            @media screen and (min-width:768px){
+                width: auto;
+            }
+        }
+     
+
+        
+          p{
+            font-family: 'Orbitron', sans-serif;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 10px;
+            opacity: 0;
+            margin-top: 0px;
+            
+         
+                  
+            @media screen and (min-width:768px){
+                font-size: 40px;
+                font-weight: 600;
+                letter-spacing: 15px;
+                margin-bottom: -10px;
+                }
+            }
+
+    }
+    
+    .about-section{
+        background-color: #000000;
+        
+        img{
+            width: 200px;
+            display: inline-block;
+        }
+        
+        p{
+           text-transform: uppercase;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 400;
+            color: #ffffff;
+            letter-spacing: 2px; 
+        }
+        
+        .trainers{
+            img{
+                width: 300px;
+                border-radius: 100%;
+            }
+            
+            div>div{
+                background-color: #990000;
+                width: 300px;
+                height: 50px;
+                padding: 5px;
+                border-radius: 5px;
+                margin: auto;
+                position: absolute;
+                left: 0; bottom: 0; right: 0;
+                display: table;
+                
+                 p{
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-size: 24px;
+                }  
+            }
+         
+        }
+    }
+    
+    .training-section{
+
+            background: #171d22;
+  
+        
+        h1{
+            font-size: 34px;
+            
+            @media screen and(min-width:768px){
+                 font-size: 60px;
+            }
+        }
+        
+        h5{
+            font-size: 16px;
+            
+            @media screen and(min-width:768px){
+                 font-size: 24px;
+            }
+        }
+
+            .class-list{
+             
+
+                >div{
+                    
+                    margin-bottom: 20px;
+                    
+                    >div{
+
+                        border: 5px solid #ffffff;
+                        border-radius: 10px;
+                        padding-bottom: 20px;
+                        
+                        hr{
+                            max-width: 100px;  
+                            border-color: #ffffff;
+                        }
+
+
+
+                        p{
+                            color: #ffffff;
+                        }
+
+                        img{
+
+                            margin-bottom: 20px;
+                            border-radius: 5px;
+                            } 
+                        }
+                    }
+
+
+
+                .program-1,
+                .program-2,
+                .program-3,
+                .program-4{
+
+                }
+            }   
+        }
+
+    
+    .how-it-works{
+    
+        background-color:#ffffff;
+           
+            @media screen and(min-width:768px){
+               background-color: rgba(255,255,255,.9);
+           }
+        
+        p{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        h2,
+        h4{
+        color: #000000;
+
+        }
+
+        img{
+            width: 150px;
+        }
+        
+    }
+       
+        
+    
+    .camps{
+             
+        background: #939598;
+        
+            @media screen and (min-width:768px){
+                    
+                }
+                @media screen and (min-width:992px){
+
+
+                }
+        
+        p{
+            color: #ffffff;
+        }
+        
+        .camp-1,
+        .camp-2{
+            
+            height: 400px;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: auto;
+            transition: all 1s;
+                hr{
+                    max-width: 200px;
+                    border: 1px solid #ffffff;
+                }
+
+            div{
+                display: none;
+            }
+            
+            
+            
+            &:hover{
+
+                h2,
+                h6{
+                    color: #000000;
+                }
+
+                div{
+                    display: block;
+
+                    hr{
+                        border-color: #000000;
+                    }
+                }
+            }
+        }
+        .camp-1{
+                background: linear-gradient(rgba(0,0,0,.2) ,rgba(0,0,0,.2)),url('..//img/camps/Camp-1.jpg')no-repeat center center;
+            
+                &:hover{
+                   background:linear-gradient(rgba(255,255,255,.5) ,rgba(255,255,255,.5)),url('..//img/camps/Camp-1.jpg')no-repeat center center;
+                  
+                }
+ 
+            }
+        
+        
+        .camp-2{
+            background: linear-gradient(rgba(0,0,0,.2) ,rgba(0,0,0,.2)),url('..//img/camps/Camp-2.jpg')no-repeat center center;
+            
+            
+                &:hover{
+                   background:linear-gradient(rgba(255,255,255,.5) ,rgba(255,255,255,.5)),url('..//img/camps/Camp-2.jpg')no-repeat center center;
+                  
+                }
+ 
+        }
+        
+    }
+}
+
+
+//Program pages styling
+.program-1-page,
+.program-2-page,
+.program-3-page,
+.program-4-page,
+.about-page,
+.camps-events-page{
+    
+    .intro{
+        background: #f0f0f0;
+        
+        h1,
+        h2,
+        h4,
+        h5,
+        h6{
+            color: #000000;
+        }
+        
+        h3{
+           color: #c20000; 
+        }
+        
+        img{
+            width: 200px;
+        }
+    }
+    
+    
+    .how-it-works{
+    
+        background-color:#ffffff;
+           
+            @media screen and(min-width:768px){
+               background-color: rgba(255,255,255,.9);
+           }
+        
+        p{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        h2,
+        h4{
+        color: #000000;
+
+        }
+
+        img{
+            width: 150px;
+        }
+        
+    }
+    
+    .sign-up{
+        
+        background-color: #939598;
+        
+         hr{
+            max-width: 200px;  
+            border: 1px solid #000000;
+        }
+        
+        
+        .program-1,
+        .program-2,
+        .program-3{
+            background-color: #c20000;
+            border: 5px solid #c20000;
+            border-radius: 10px;
+            margin-bottom: 15px;
+ 
+
+            p{
+                font-size: 18px;
+                color: #ffffff;
+            }
+            
+            >div:nth-of-type(1){
+                background-color: #000000;
+                border-radius: 10px;
+                display: table;
+                padding: 15px;
+                margin: -50px auto 20px auto;
+                
+                
+                h4{
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    
+}
+
+.about-page{
+    background: url('../img/BackgroundImg/AdobeStock_66155005.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+    .philosophy{
+        background: #bdbdbd;
+        
+        img{
+            width: 200px;
+            display: inline-block;
+        }
+    }
+    
+    .meet-the-team{
+        background: #a8a8a8;
+        
+         img{
+                width: 300px;
+                border-radius: 100%;
+            }
+            
+        .trainers{
+            
+            
+            .name{
+                background-color: #990000;
+                width: 300px;
+                height: 50px;
+                padding: 5px;
+                border-radius: 5px;
+                margin: auto;
+                position: absolute;
+                left: 0; bottom: 0; right: 0;
+                display: table;
+                
+                 p{
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-size: 24px;
+                     color: #ffffff;
+                }  
+            }
+        }
+            
+        
+    }
+}
+
+.program-1-page{  
+    background: url('../img/BackgroundImg/Program%201.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+    
+    .intro{
+    
+         .kids-option{
+            background: #ff0000;
+
+            h3,
+            h5{
+                color: #ffffff;
+            }
+            a{
+                display: table;
+                margin: auto;
+                h6{
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }   
+        }
+    }
+    
+}
+
+.program-2-page{
+    
+    background: url('../img/BackgroundImg/Program%202.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+    
+   
+    
+}
+
+.program-3-page{
+    
+    background: url('../img/BackgroundImg/Program%203.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+
+}
+
+.program-4-page{
+    
+    background: url('../img/BackgroundImg/Program%204.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+ 
+    hr{
+        max-width: 400px;
+        border: 1px solid #000000;
+    }
+    
+    .choose-trainer{
+        background: #939598;
+        
+       
+        
+        p{
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 400;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+        
+        >div:nth-of-type(1){
+            margin-bottom: 150px;
+        }
+        
+        .trainer-1{
+            margin-bottom: 150px;
+            
+            @media screen and(min-width: 768px){
+                margin-bottom: 0px;
+            }
+        }
+        .trainer-1,
+        .trainer-2{
+             img{
+                width: 250px;
+                border-radius: 100%;
+                 margin-top: -125px;
+               
+                
+            }
+            
+            background: #000000;
+            border-radius: 20px;
+            padding-bottom: 15px;
+            
+            hr{
+                max-width: 200px;
+                border-color: #ffffff;
+            }
+        }
+        
+    }
+}
+
+.camps-events-page{
+    
+     background: url('../img/BackgroundImg/Camps-backround.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+    
+    .intro{
+        background: #e0e0e0;
+    }
+    
+    .choose-camp{
+         background: #ffffff;
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+            color: #000000;
+        }
+        
+        hr{
+            border: 1px solid #000000;
+            max-width: 200px;
+        }
+        
+        ul{
+            list-style-position: inside;
+        }
+       
+        a{
+            border-radius: 5px;
+        }
+        
+        img{
+            border-radius: 10px;
+        }
+        
+    }
+    
+    
+}
