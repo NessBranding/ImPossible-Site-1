@@ -1,0 +1,35 @@
+$p1: 	#ff0000;
+$p2:	#990000;
+
+$w:		#f8f8f8;
+$b:		#191919;
+
+
+$bd-1:	1px solid $w;
+$bd-5:	5px solid $w;
+
+$bg-1:	#171d22;
+$bg-2:	#939598;
+
+$ov-1:	rgba(60,0,0,.50);
+$ov-2: 	rgba(255,255,255,.9);
+
+$lg-1:	linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2));
+$lg-2:	linear-gradient(rgba(255,255,255,.5) ,rgba(255,255,255,.5));
+
+
+a{
+    color: $p1;
+        
+    &:hover{
+            color: $p2;
+            text-decoration: none;
+        }
+    &:focus{
+        color: $p1;
+    }
+} 
+
+h1,h2,h3,h4,h5,h6,p{
+	color: $w;
+}

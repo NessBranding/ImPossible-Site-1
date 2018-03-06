@@ -12,33 +12,6 @@
     overflow: hidden;
 }
 
-a{
-    color: #ff0000;
-        
-    &:hover{
-            color: rgba(255,0,0,.7);
-            text-decoration: none;
-        }
-    &:focus{
-        color: #ff0000;
-    }
-} 
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: 1px;
-}
-
- 
 img{
     display: block;
     max-width: 100%;
@@ -60,23 +33,20 @@ img{
 footer{
     
  
-    background: #000000;
-    border-top: 1px #ffffff solid;
+    background: $b;
+    border-top: 1px $w solid;
     
     
     .footer{
-        p,
-        a{
-            color: #ffffff;
-        }
-        
+   
+        a,
         .fa-calendar-alt,
         .fa-facebook-square,
         .fa-instagram,
         .fa-map-marker-alt,
         .fa-envelope,
         .fa-phone-square{
-            color: #ffffff;
+            color: $w;
         }
     }
     
@@ -88,7 +58,7 @@ footer{
 
 .head{
 
-    background-color: rgba(60,0,0,.50);
+    background-color: $ov-1;
     padding-top: 100px;
     padding-bottom: 50px;
 
@@ -107,7 +77,6 @@ footer{
 
         font-size: 40px;
         font-weight: 700;
-        color: #ffffff;
 
         @media screen and (min-width: 768px){
             font-size: 70px;
@@ -115,10 +84,7 @@ footer{
     }
         p{
             text-transform: uppercase;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 400;
             letter-spacing: 3px;
-            color: #ffffff;
              @media screen and(min-width:768px){
 
                 font-size:24px;
@@ -131,26 +97,25 @@ footer{
     margin-bottom: -1px;
     
     .logo-overlay{
-        
-  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    position:absolute;
-      z-index:100;
-      top:0;
-        bottom:0;
-        right:0;
-      left:0;
-      width: 100%;
-        height: 100%;
-        margin: auto;
-        
-        img{ 
-            width: 20%;
-        }
-        
-        p{
-            color: #ffffff;
-            font-size: 24px;
-        }
+
+		background-image: $lg-1;
+		position:absolute;
+		z-index:100;
+		top:0;
+		bottom:0;
+		right:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+
+		img{ 
+			width: 20%;
+		}
+
+		p{
+			font-size: 24px;
+		}
     }
     
     .carousel-item{
@@ -171,45 +136,9 @@ footer{
 
 .home-page{
 
-    .head-logo-section{
-        
-        background-color: rgba(60,0,0,.50); 
-  
-        img{
-            width: 50%;
-            opacity: 0;
-
-            @media screen and (min-width:768px){
-                width: auto;
-            }
-        }
-     
-
-        
-          p{
-            font-family: 'Orbitron', sans-serif;
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: 400;
-            text-transform: capitalize;
-            letter-spacing: 10px;
-            opacity: 0;
-            margin-top: 0px;
-            
-         
-                  
-            @media screen and (min-width:768px){
-                font-size: 40px;
-                font-weight: 600;
-                letter-spacing: 15px;
-                margin-bottom: -10px;
-                }
-            }
-
-    }
     
     .about-section{
-        background-color: #000000;
+        background-color: $b;
         
         img{
             width: 200px;
@@ -217,10 +146,7 @@ footer{
         }
         
         p{
-           text-transform: uppercase;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 400;
-            color: #ffffff;
+           	text-transform: uppercase;
             letter-spacing: 2px; 
         }
         
@@ -231,7 +157,7 @@ footer{
             }
             
             div>div{
-                background-color: #990000;
+                background-color: $p2;
                 width: 300px;
                 height: 50px;
                 padding: 5px;
@@ -253,7 +179,7 @@ footer{
     
     .training-section{
 
-            background: #171d22;
+            background: $bg-1;
   
         
         h1{
@@ -271,6 +197,7 @@ footer{
                  font-size: 24px;
             }
         }
+		
 
             .class-list{
              
@@ -281,20 +208,15 @@ footer{
                     
                     >div{
 
-                        border: 5px solid #ffffff;
+                        border: $bd-5;
                         border-radius: 10px;
                         padding-bottom: 20px;
                         
                         hr{
                             max-width: 100px;  
-                            border-color: #ffffff;
+                            border-color: $w;
                         }
 
-
-
-                        p{
-                            color: #ffffff;
-                        }
 
                         img{
 
@@ -318,20 +240,22 @@ footer{
     
     .how-it-works{
     
-        background-color:#ffffff;
+        background-color:$w;
            
             @media screen and(min-width:768px){
-               background-color: rgba(255,255,255,.9);
+               background-color: $ov-2;
            }
         
         p{
+			font-family: $f2;
             padding-left: 50px;
             padding-right: 50px;
         }
-
+		
+		p,
         h2,
         h4{
-        color: #000000;
+        color: $b;
 
         }
 
@@ -345,7 +269,7 @@ footer{
     
     .camps{
              
-        background: #939598;
+        background: $bg-2;
         
             @media screen and (min-width:768px){
                     
@@ -354,10 +278,7 @@ footer{
 
 
                 }
-        
-        p{
-            color: #ffffff;
-        }
+     
         
         .camp-1,
         .camp-2{
@@ -369,7 +290,7 @@ footer{
             transition: all 1s;
                 hr{
                     max-width: 200px;
-                    border: 1px solid #ffffff;
+                    border: $bd-1;
                 }
 
             div{
@@ -382,23 +303,23 @@ footer{
 
                 h2,
                 h6{
-                    color: #000000;
+                    color: $b;
                 }
 
                 div{
                     display: block;
 
                     hr{
-                        border-color: #000000;
+                        border-color: $w;
                     }
                 }
             }
         }
         .camp-1{
-                background: linear-gradient(rgba(0,0,0,.2) ,rgba(0,0,0,.2)),url('..//img/camps/Camp-1.jpg')no-repeat center center;
+                background: $lg-1,url('..//img/camps/Camp-1.jpg')no-repeat center center;
             
                 &:hover{
-                   background:linear-gradient(rgba(255,255,255,.5) ,rgba(255,255,255,.5)),url('..//img/camps/Camp-1.jpg')no-repeat center center;
+                   background: $lg-2,url('..//img/camps/Camp-1.jpg')no-repeat center center;
                   
                 }
  
@@ -406,11 +327,11 @@ footer{
         
         
         .camp-2{
-            background: linear-gradient(rgba(0,0,0,.2) ,rgba(0,0,0,.2)),url('..//img/camps/Camp-2.jpg')no-repeat center center;
+            background: $lg-1,url('..//img/camps/Camp-2.jpg')no-repeat center center;
             
             
                 &:hover{
-                   background:linear-gradient(rgba(255,255,255,.5) ,rgba(255,255,255,.5)),url('..//img/camps/Camp-2.jpg')no-repeat center center;
+                   background: $lg-2,url('..//img/camps/Camp-2.jpg')no-repeat center center;
                   
                 }
  
