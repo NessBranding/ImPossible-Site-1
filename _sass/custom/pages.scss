@@ -1,0 +1,490 @@
+//PAGES STYLING for specific pages beyond what GLobal Styles dictate 
+
+.home-page{
+
+    background: url('../img/BackgroundImg/Home-background.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size:cover;
+    -o-background-size: cover; 
+           
+    
+    .about-section{
+        background-color: $b;
+        
+        img{
+            width: 200px;
+            display: inline-block;
+        }
+        
+        p{
+           	text-transform: uppercase;
+            letter-spacing: 2px; 
+        }
+        
+        .trainers{
+            img{
+                width: 300px;
+                border-radius: 100%;
+            }
+            
+            div>div{
+                background-color: $p2;
+                width: 300px;
+                height: 50px;
+                padding: 5px;
+                border-radius: 5px;
+                margin: auto;
+                position: absolute;
+                left: 0; bottom: 0; right: 0;
+                display: table;
+                
+                 p{
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-size: 24px;
+                }  
+            }
+         
+        }
+    }
+    
+    .training-section{
+
+            background: $bg-1;
+  
+        
+        h1{
+            font-size: 34px;
+            
+            @media screen and(min-width:768px){
+                 font-size: 60px;
+            }
+        }
+        
+        h5{
+            font-size: 16px;
+            
+            @media screen and(min-width:768px){
+                 font-size: 24px;
+            }
+        }
+		
+
+            .class-list{
+             
+
+                >div{
+                    
+                    margin-bottom: 20px;
+                    
+                    >div{
+
+                        border: $bd-5;
+                        border-radius: 10px;
+                        padding-bottom: 20px;
+                        
+                        hr{
+                            max-width: 100px;  
+                            border-color: $w;
+                        }
+
+
+                        img{
+
+                            margin-bottom: 20px;
+                            border-radius: 5px;
+                            } 
+                        }
+                    }
+
+
+
+                .program-1,
+                .program-2,
+                .program-3,
+                .program-4{
+
+                }
+            }   
+        }
+        
+    
+    .camps{
+             
+        background: $bg-2;
+        
+            @media screen and (min-width:768px){
+                    
+                }
+                @media screen and (min-width:992px){
+
+
+                }
+     
+        
+        .camp-1,
+        .camp-2{
+            
+            height: 400px;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: auto;
+            transition: all 1s;
+                hr{
+                    max-width: 200px;
+                    border: $bd-1;
+                }
+
+            div{
+                display: none;
+            }
+            
+            
+            
+            &:hover{
+
+                h2,
+                h6{
+                    color: $b;
+                }
+
+                div{
+                    display: block;
+
+                    hr{
+                        border-color: $w;
+                    }
+                }
+            }
+        }
+		
+        .camp-1{
+                background: $lg-1,url('..//img/camps/Camp-1.jpg')no-repeat center center;
+            
+                &:hover{
+                   background: $lg-2,url('..//img/camps/Camp-1.jpg')no-repeat center center;
+                  
+                }
+ 
+            }
+        
+        
+        .camp-2{
+            background: $lg-1,url('..//img/camps/Camp-2.jpg')no-repeat center center;
+            
+            
+                &:hover{
+                   background: $lg-2,url('..//img/camps/Camp-2.jpg')no-repeat center center;
+                  
+                }
+ 
+        }
+        
+    }
+}
+
+
+.about-page{
+    background: url('../img/BackgroundImg/AdobeStock_66155005.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+    .philosophy{
+        background: $bg-4;
+		
+		hr{
+			border: $hrw;
+			max-width: 300px;
+		}
+        
+        img{
+            width: 200px;
+            display: inline-block;
+        }
+    }
+    
+    .meet-the-team{
+        background: $bg-2;
+        
+         img{
+                width: 300px;
+                border-radius: 100%;
+            }
+            
+        .trainers{
+            
+            
+            .name{
+                background-color: $p2;
+                width: 300px;
+                height: 50px;
+                padding: 5px;
+                border-radius: 5px;
+                margin: auto;
+                position: absolute;
+                left: 0; bottom: 0; right: 0;
+                display: table;
+                
+                 p{
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-size: 24px;
+                }  
+            }
+        }
+            
+        
+    }
+}
+
+
+.program-1-page{  
+    background: url('../img/BackgroundImg/Program%201.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+ 
+    
+}
+
+
+.program-2-page{
+    
+    background: url('../img/BackgroundImg/Program%202.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+    
+   
+    
+}
+
+
+.program-3-page{
+    
+    background: url('../img/BackgroundImg/Program%203.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+
+}
+
+
+.program-4-page{
+    
+    background: url('../img/BackgroundImg/Program%204.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+ 
+    hr{
+        max-width: 400px;
+        border: $hrb;
+    }
+    
+    .choose-trainer{
+        background: #939598;
+        
+       
+        
+        p{
+            font-weight: 400;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+        
+        >div:nth-of-type(1){
+            margin-bottom: 150px;
+        }
+        
+        .trainer-1{
+            margin-bottom: 150px;
+            
+            @media screen and(min-width: 768px){
+                margin-bottom: 0px;
+            }
+        }
+        .trainer-1,
+        .trainer-2{
+             img{
+                width: 250px;
+                border-radius: 100%;
+                 margin-top: -125px;
+               
+                
+            }
+            
+            background: $b;
+            border-radius: 20px;
+            padding-bottom: 15px;
+            
+            hr{
+                max-width: 200px;
+                border: $hrw;
+            }
+        }
+        
+    }
+}
+
+
+.camps-events-page{
+    
+     background: url('../img/BackgroundImg/Camps-backround.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+    
+    
+    .choose-camp{
+         background: $bg-4;
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+		p{
+            color: $b;
+        }
+        
+        hr{
+            border: $hrb;
+            max-width: 200px;
+        }
+        
+        ul{
+            list-style-position: inside;
+        }
+       
+        a{
+            border-radius: 5px;
+        }
+        
+        img{
+            border-radius: 10px;
+        }
+        
+    }
+    
+    
+}
+
+
+.calendar{
+	background: url('../img/BackgroundImg/Camps-backround.jpeg') no-repeat center top fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size:100%;
+    -o-background-size: 100%; 
+    
+    @media screen and(min-width:576px){
+        -webkit-background-size: 120%;
+        -moz-background-size: 120%;
+        background-size:120%;
+        -o-background-size: 120%; 
+    }
+    
+    @media screen and(min-width:992px){
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    }
+    
+}
+
+
+//End Pages Styling

@@ -1,0 +1,26 @@
+
+
+footer{
+    
+ 
+    background: $b;
+    border-top: 1px $w solid;
+    
+    
+    .footer{
+   
+        a,
+        .fa-calendar-alt,
+        .fa-facebook-square,
+        .fa-instagram,
+        .fa-map-marker-alt,
+        .fa-envelope,
+        .fa-phone-square{
+            color: $w;
+        }
+    }
+    
+  
+    
+}
+
