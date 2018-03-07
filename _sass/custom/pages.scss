@@ -79,10 +79,6 @@
                     margin-bottom: 20px;
                     
                     >div{
-
-                        border: $bd-5;
-                        border-radius: 10px;
-                        padding-bottom: 20px;
                         
                         hr{
                             max-width: 100px;  
@@ -98,14 +94,6 @@
                         }
                     }
 
-
-
-                .program-1,
-                .program-2,
-                .program-3,
-                .program-4{
-
-                }
             }   
         }
         
@@ -131,10 +119,8 @@
             border-radius: 10px;
             margin: auto;
             transition: all 1s;
-                hr{
-                    max-width: 200px;
-                    border: $bd-1;
-                }
+			
+               
 
             div{
                 display: none;
@@ -153,7 +139,8 @@
                     display: block;
 
                     hr{
-                        border-color: $w;
+						max-width: 300px;
+                        border: $hrb;
                     }
                 }
             }
@@ -208,8 +195,12 @@
     .philosophy{
         background: $bg-4;
 		
+		h1,h2,h3,h4,h5,h6,p{
+			color: $b;
+		}
+		
 		hr{
-			border: $hrw;
+			border: $hrb;
 			max-width: 300px;
 		}
         
@@ -368,32 +359,25 @@
             letter-spacing: 1px;
             font-size: 18px;
         }
-        
-        >div:nth-of-type(1){
-            margin-bottom: 150px;
-        }
-        
-        .trainer-1{
-            margin-bottom: 150px;
-            
-            @media screen and(min-width: 768px){
-                margin-bottom: 0px;
-            }
-        }
-        .trainer-1,
-        .trainer-2{
+ 
+        .trainer{
+			margin-top: 125px;
+			background: $b;
+			border-radius: 20px;
+			
              img{
                 width: 250px;
                 border-radius: 100%;
-                 margin-top: -125px;
-               
-                
+                 margin-top: -125px; 
             }
             
-            background: $b;
-            border-radius: 20px;
-            padding-bottom: 15px;
-            
+			ul{
+				color: $w;
+				display: inline-block;
+				text-align: left;
+				font-size: 24px;
+			}
+			
             hr{
                 max-width: 200px;
                 border: $hrw;

@@ -1,3 +1,5 @@
+//All colors for the website
+
 //Primary
 $p1: 	#ff0000;
 $p2:	#990000;
@@ -33,7 +35,7 @@ $lg-1:	linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2));
 $lg-2:	linear-gradient(rgba(255,255,255,.5) ,rgba(255,255,255,.5));
 
 
-//Global Colors for all links, headers, & Paragraphs
+// Colors for all links, headers, & Paragraphs
 a{
     color: $p1;
         
@@ -49,3 +51,6 @@ a{
 h1,h2,h3,h4,h5,h6,p{
 	color: $w;
 }
+
+
+//End Colors
